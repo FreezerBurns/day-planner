@@ -1,0 +1,45 @@
+body{
+    text-align:center;
+    background-color: teal;
+}
+h1,h2{
+    color: beige;
+}
+#time{
+    background-color: gold;
+    color:purple;
+}
+.one{
+    color:beige;
+}
+.beige{
+    color:beige;
+}
+#txtValue{
+    color:blueviolet;
+}
+#dayOfTheWeek{
+    color:blueviolet;
+}
+#activities{
+    color:blueviolet; 
+}
+.clear{
+    color:beige;
+}
+button{
+    background-color: gold;
+    color:purple;
+}
+#btnClear{
+    background-color: gold;
+    color:purple;
+}
+#btnClear2{
+    background-color: gold;
+    color:purple;
+
+}
+.form-control {
+    background-color:lightseagreen;
+}

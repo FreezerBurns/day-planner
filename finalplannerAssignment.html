@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Daily Activity Planner</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="finalAssignment.css">
+     </head>
+
+
+<body>
+  <fieldset class="teal">
+  <legend>
+    <h1><strong>Friendly Reminder</strong></h1>
+    <h2>Welcome to a Whole New Journey</h2>
+    
+    <br>
+    <p class="one">"A daily planner that helps with planning a more effective day."</p>
+    <br>
+    <!--This is the time buttons-->
+    <label class="beige">Choose a time: </label>
+<!--the times for selection-->
+<select id="time" onchange="time();">
+  <option value="four">4:00 am :</option>
+  <option value="five">5:00 am: </option>
+  <option value="six">6:00 am: </option>
+  <option value="seven">7:00 am: </option>
+  <option value="eight">8:00 am :</option>
+  <option value="nine">9:00 am: </option>
+  <option value="ten">10:00 am: </option>
+  <option value="eleven">11:00 am: </option>
+  <option value="tweleve">12:00 pm :</option>
+  <option value="thirteen">1:00 pm :</option>
+  <option value="fourteen">2:00 pm: </option>
+  <option value="fifteen">3:00 pm: </option>
+  <option value="sixteen">4:00 pm: </option>
+  <option value="seventeen">5:00 pm: </option>
+  <option value="eighteen">6:00 pm: </option>
+  <option value="nineteen">7:00 pm: </option>
+  <option value="twenty">8:00 pm :</option>
+  <option value="twentyOne">9:00 am: </option>
+  <option value="twentyTwo">10:00 am: </option>
+  <option value="twentyThree">11:00 am: </option>
+  <option value="twentyFour">12:00 am :</option>
+  <option value="uno">1:00 am :</option>
+  <option value="two">2:00 am: </option>
+  <option value="three">3:00 am: </option>
+  
+</select>
+<hr>
+
+<div>
+    <input id="txtValue" class="form-control form-control-med" type="text" placeholder="selected time">
+<br>
+
+<input id="dayOfTheWeek" class="form-control form-control-med" type="text" placeholder="write the day of the week ">
+<br>
+<input id="activities" class="form-control form-control-med" type="text" placeholder="write your actitvity here">
+
+<br>
+<button id="entry">Submit</button>
+<input type="button" value="Clear Planner" id="btnClear"/>
+</div>
+</legend>
+</fieldset>
+    <br>
+    <hr>
+    <hr>
+    <div>
+        <h2>Daily Planner at a Glance</h2>
+
+    <table id="display" class="clear">
+        <tr cols="80" rows="10">
+            <th>Day of the week</th>
+            <th>Activity</th>
+            <th>Time</th>
+        </tr>
+    </table> 
+</div>
+<p>
+    
+    <input type="button" value="clear planner at a glance" id="btnClear2"/>
+</p>
+
+<script src="finalPlannerAssignment.js"></script>
+</body>
+</html>
